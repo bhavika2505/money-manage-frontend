@@ -1,0 +1,104 @@
+/* StaffDetailsForm.css */
+
+/* This will ensure that the form container is centered within the dialog */
+.dialog1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style the form itself */
+  .staff-details-form {
+    width: 100%; /* Full width of the dialog */
+    max-width: 600px; /* Maximum width */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Enables scrolling for overflow content */
+    margin: 15px; /* Space from dialog edges */
+  }
+  
+  /* Style the form header */
+  .staff-details-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form fields and labels */
+  .staff-details-form label,
+  .staff-details-form input,
+  .staff-details-form textarea,
+  .staff-details-form button {
+    width: 100%; /* Full width of form */
+    margin-bottom: 10px; /* Spacing between elements */
+  }
+  
+  .staff-details-form label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Spacing between label and field */
+  }
+  
+  /* Specific styles for input and textarea elements */
+  .staff-details-form input,
+  .staff-details-form textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; /* Full width of form */
+    margin-bottom: 10px;
+  }
+
+
+  .staff-details-form textarea {
+    height: 100px; /* Fixed height for textareas */
+    resize: vertical; /* Allow only vertical resizing */
+  }
+  
+  /* Style for buttons */
+  .staff-details-form button {
+    padding: 10px;
+    border: none;
+    background-color: #FF4081;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  /* Adjusting the width of the scrollbar */
+.staff-details-form::-webkit-scrollbar {
+  width: 2px; /* Decrease the width as per your requirement */
+}
+
+/* Optionally, you can also style the scrollbar track (background) */
+.staff-details-form::-webkit-scrollbar-track {
+  background: #598A8C;
+  border-radius: 10px;
+}
+
+/* Styling the scrollbar handle */
+.staff-details-form::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Changing scrollbar handle color on hover */
+.staff-details-form::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+  
+  .staff-details-form button:hover {
+    background-color: #9f1c47;
+  }
+  
+  /* Add responsiveness to the form for smaller devices */
+  @media screen and (max-width: 768px) {
+    .staff-details-form {
+      max-width: 90%; /* Allow the form to be responsive based on screen size */
+    }
+  }
+  

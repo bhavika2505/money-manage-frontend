@@ -1,0 +1,229 @@
+.container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .money-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .add-bank-account {
+    background-color: #598A8C;
+    color: white;
+    padding: 32px;
+    margin-top: 0px;
+    border-radius: 0px;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .balance-view {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 5px 8px 10px grey;
+    margin-top: 20px;
+  }
+  
+  .balance {
+    font-size: 1.5em; /* Adjust the font size to match your design */
+    font-weight: bold;
+  }
+  
+  .view-payments-history-btn {
+    background-color: cadetblue; /* Adjust the color to match your design */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .request-money-order-qr {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 35px;
+  }
+  
+  .request-money-btn,
+  .order-qr-code-btn {
+    background-color: #a0c2c3;
+    border: none;
+    padding: 75px 52px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px grey;
+    font-weight: 600;
+    font-size: larger;
+  }
+  
+  .sending-payments-disabled {
+    background-color: gainsboro;
+    color: black;
+    margin-top: 44px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    font-size: larger;
+    border-radius: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .view-history-btn {
+    background-color: cadetblue; /* Adjust the color to match your design */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .collect-pending-money {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .staff-payment-btn {
+    background-color: cadetblue;
+    color: white;
+    padding: 10px;
+    font-size: medium;
+    display: flex;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .staff-payment{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add-bank-btn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 31px;
+    border: none;
+    color: black;
+    background-color: white;
+    font-weight: 700;
+    border: 1px dotted;
+
+  }
+
+  .pending-icon{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .money-dash{
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .pending-icon svg{
+    width: 25px;
+    height: 25px;
+    color: red;
+  }
+
+  .bank-btn-title h1{
+    margin-bottom: 0px;
+    line-height: 0;
+  }
+
+  .money-icon svg{
+    width: 36px;
+    height: 45px;
+  }
+
+  .money-icons svg{
+    width: 43px;
+    height: 45px;
+  }
+
+  .bank-btn-title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .bank-btn-title span{
+    color: cadetblue;
+  }
+
+  .collect-pending-money button{
+    border: none;
+    background-color: transparent;
+    box-shadow: 3px 8px 10px grey;
+    padding: 27px;
+    font-size: medium;
+    width: -webkit-fill-available;
+    margin-top: 12px;
+  }
+
+  .bank-icon svg{
+    height: 59px;
+    width: 61px;
+    padding: 6px;
+    color: azure;
+    background-color: brown;
+    border-radius: 72px;
+    margin-right: 19px;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .money-dashboard {
+      flex-direction: column;
+    }
+  
+    .request-money-order-qr {
+      flex-direction: column;
+    }
+  
+    .request-money-btn,
+    .order-qr-code-btn,
+    .view-history-btn,
+    .staff-payment-btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

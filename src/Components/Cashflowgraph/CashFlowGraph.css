@@ -1,0 +1,50 @@
+/* CashFlowGraph.css */
+
+.cash-flow-container {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  
+  .cash-flow-grid line {
+    stroke: #ccc; /* Light grey grid lines */
+  }
+  
+  .cash-flow-x-axis path,
+  .cash-flow-x-axis line {
+    stroke: #777; /* Darker grey for axis lines */
+  }
+  
+  .cash-flow-y-axis path,
+  .cash-flow-y-axis line {
+    stroke: #777;
+  }
+  
+  .cash-flow-tooltip {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cash-flow-legend {
+    bottom: 0;
+    position: absolute;
+  }
+  
+  .bar-incoming {
+    fill: #0088FE; /* Incoming bar color */
+  }
+  
+  .bar-outgoing {
+    fill: #00C49F; /* Outgoing bar color */
+  }
+  
+  .line-profit {
+    stroke: #000; /* Profit line color */
+    stroke-width: 2px; /* Profit line stroke width */
+  }
+  
+  .recharts-dot {
+    stroke: #000; /* Dot stroke color for profit line */
+    fill: #fff; /* Dot fill color for profit line */
+  }
+  

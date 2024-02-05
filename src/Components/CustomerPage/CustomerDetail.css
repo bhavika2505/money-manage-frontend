@@ -1,0 +1,332 @@
+.customer-detail-overlay {
+  position: fixed; /* Cover the entire view */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+.customer-detail {
+  background: white; /* Assuming a white background */
+  width: 90%; /* Or a specific width */
+  height: 95%;
+  max-width: 500px; /* Maximum width */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures nothing spills outside the border-radius */
+  z-index: 11; /* Above the overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.customer-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em; /* Adjust as needed */
+  background: #005353; /* Header background color */
+  color: white; /* Text color */
+}
+
+.back-button, .settings-button {
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+/* Add hover effects for buttons */
+.back-button:hover, .settings-button:hover {
+  opacity: 0.8;
+}
+
+.customer-detail-name h2 {
+  margin: 0;
+  font-size: 1.5em; /* Adjust font size as needed */
+}
+
+.customer-detail-name span {
+  display: block;
+  font-size: 0.9em;
+  margin-top: 0.2em;
+}
+
+.transactions-intro {
+  padding: 0em;
+  margin-bottom: 20px;
+  background: #ececec;
+  border-top: 1px solid #dee2e6;
+  display: flex;
+  width: -webkit-fill-available;
+  margin: 20px 12px;
+  border-bottom: 1px solid #dee2e6;
+  border: none;
+  font-size: medium;
+  border-radius: 5px;
+  font-weight: 700;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  color: #004749;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-flex-container {
+  display: flex;
+  justify-content: flex-start; /* Default alignment */
+  width: 100%; /* Adjust as needed */
+}
+
+.received-container {
+  justify-content: flex-start; /* Aligns received payments to the right */
+}
+
+.given-container {
+  justify-content: flex-end; /* Aligns given payments to the left */
+}
+
+.payment-history {
+  /* Your existing styles for payment-history */
+  width: 68%; /* Adjust width as needed */
+  margin: 8px;
+  /* ... other styles */
+}
+
+
+.transaction-buttons {
+  padding: 1em;
+}
+
+.transaction-button {
+  flex: 1; /* Take up equal space */
+  margin: 0.5em;
+  padding: 0.8em;
+  border: none;
+  margin-top: auto; 
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.received-payment-history{
+  border: 1px solid;
+  margin: 8px;
+  width: 68%;
+  padding: 14px 23px;
+  /* padding-bottom: 0px; */
+  background: azure;
+  box-shadow: 10px 3px rgba(0,0,0,0.1);
+
+}
+.received-payment-history-dd{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    color: grey;
+}
+
+.received-history-amount p{
+  font-size: 45px;
+  color: green;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -5px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.given-payment-history{
+  border: 1px solid;
+  margin: 8px;
+  width: 68%;
+  padding: 14px 23px;
+  /* padding-bottom: 0px; */
+  background: azure;
+  box-shadow: 10px 3px rgba(0,0,0,0.1);
+}
+
+.given-history-amount p{
+  font-size: 45px;
+  color: red;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -5px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.given-payment-history-dd{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    color: grey;
+}
+
+.given-pay{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.delete-confirmation-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 100; /* Higher than the customer detail overlay */
+  width: 300px; /* Adjust as needed */
+  text-align: center;
+}
+
+.delete-confirmation-dialog h2 {
+  margin-bottom: 20px;
+}
+
+.delete-confirmation-dialog button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-confirmation-dialog button:first-child {
+  background-color: #ccc; /* Cancel button */
+}
+
+.delete-confirmation-dialog button:last-child {
+  background-color: #dc3545; /* Delete button */
+  color: white;
+}
+.payment-history {
+  display: flex;
+  justify-content: space-between;
+}
+
+.received-payment-history {
+  order: 2; /* Positions on the right */
+}
+
+.given-payment-history {
+  order: 1; /* Positions on the left */
+}
+
+
+.you-gave {
+  background-color: #dc3545; /* Red color for 'You Gave' */
+}
+
+.you-got {
+  background-color: #28a745; /* Green color for 'You Got' */
+}
+
+/* Add hover effects for transaction buttons */
+.transaction-button:hover {
+  opacity: 0.8;
+}
+
+
+
+.history-dashboard {
+  max-height: 450px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 25px; /* Spacing between this section and the next */
+}
+
+.transaction-buttons {
+  /* Other styles */
+  position: sticky;
+  bottom: 0; /* Stick to the bottom of the parent container */
+}
+
+@media screen and (max-width: 768px) { /* For tablets */
+  .customer-detail {
+    width: 95%;
+    height: 70%;
+    overflow-y: auto;
+    max-width: none;
+    padding: 0.5em;
+  }
+
+  .customer-detail-header, .transactions-intro, .transaction-buttons {
+    padding: 0.5em;
+  }
+
+  .transaction-button {
+    margin: 0.25em;
+    padding: 0.5em;
+  }
+  .customer-detail-header, .transactions-intro {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .customer-detail-name span {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) { /* For mobile phones */
+  .customer-detail {
+    width: 100%;
+    height: auto; /* Adjust height for smaller screens */
+    border-radius: 0; /* Optional: remove border-radius for full width */
+  }
+
+  .customer-detail-name h2 {
+    font-size: 1.2em; /* Reduce font size */
+  }
+
+  .customer-detail-header {
+    padding: 0.5em;
+  }
+
+  .customer-detail-name h2 {
+    font-size: 1.2em;
+  }
+
+  .transactions-intro {
+    padding: 0.5em;
+  }
+
+  .transaction-button {
+    margin: 0.1em;
+    padding: 0.4em;
+  }
+
+  .history-dashboard {
+    max-height: 300px; /* Adjust height for smaller screens */
+  }
+  .transaction-button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,120 @@
+.present {
+    background-color: #87e687;
+    color: black;
+}
+
+.absent {
+    background-color: #ff9fa8;
+    color: black;
+}
+
+.unmarked {
+    background-color: white;
+    color: black;
+}
+
+.react-calendar {
+    width: -webkit-fill-available;
+    margin-top: 11px;
+    max-width: 100%;
+    background: #598a8ce8;
+    border: 1px solid #a0a096;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 1.125em;
+}
+
+.react-calendar span{
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.react-calendar__navigation button {
+    min-width: 44px;
+    background: none;
+    font-size: larger;
+}
+
+.present:hover {
+    background-color: #76cd76; /* Lighter green for hover on present */
+}
+
+.absent:hover {
+    background-color: #ff7f7f; /* Lighter red for hover on absent */
+}
+
+.unmarked:hover {
+    background-color: #b1afaf; /* Light grey for hover on unmarked */
+}
+
+.react-calendar__tile:hover {
+    background-color: #e0e0e0; /* Default hover color for any tile */
+}
+
+.attendance-controls{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.attendance-controls button{
+    margin: 10px;
+    padding: 13px;
+    border: none;
+    font-weight: 700;
+}
+
+.attendance-totals{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    background: cadetblue;
+    border: 1px dotted;
+    padding: 22px;
+}
+
+.present-count{
+    font-weight: 700;
+    color: green;
+    margin-bottom: 15px;
+    
+}
+
+.presentbtn{
+    background-color: #76cd76;
+}
+
+.absentbtn{
+    background-color: #ff9fa8;
+}
+
+.absent-count{
+    font-weight: 700;
+    color: #a82626;
+}
+
+.savebtn{
+    background-color: rgb(202, 185, 185);
+}
+
+.non-working-day {
+    background-color: #f0e68c; /* or any other color indicating a non-working day */
+}
+
+.toggle-five-day-week{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    color: darkcyan;
+    font-weight: 700;
+}

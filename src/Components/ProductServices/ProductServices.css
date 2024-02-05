@@ -1,0 +1,160 @@
+.services-container {
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: -webkit-fill-available;
+  margin: 0px auto;
+  height: -webkit-fill-available;
+  }
+  
+  .illustration-container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .services-list {
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .service-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: none;
+    background: #f8f8f8bf;
+    padding: 0px 20px;
+    border-radius: 3px;
+    box-shadow: 10px 10px 5px lavender;
+    margin-top: 15px;
+  }
+  
+  .services-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: medium;
+    padding: 7px;
+  }
+  
+  /* Style the icons using Font Awesome's class instead of a custom class */
+  .fa-box{
+    color: #31c223;
+    margin-right: 10px;
+    background-color: #F0F0F0;
+    width: 15px;
+    padding: 15px;
+    border-radius: 30px;
+    height: 15px;
+  }
+
+  .fa-book{
+    color: #ff6500;
+    margin-right: 10px;
+    background-color: #F0F0F0;
+    width: 15px;
+    padding: 15px;
+    border-radius: 30px;
+    height: 15px;
+  }
+
+  .fa-chart-line {
+    color: #ff0000;
+    margin-right: 10px;
+    background-color: #F0F0F0;
+    width: 15px;
+    padding: 15px;
+    border-radius: 30px;
+    height: 15px;
+  }
+
+  .serviesimg{
+    width: 5%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 30px;
+    border-radius: 4px;
+  }
+  
+  .add-service-btn {
+    position: fixed;/* Absolute positioning relative to services-container */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the left */
+    background: cadetblue; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for button text */
+  }
+
+  .filter-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .filter-container input[type="text"] {
+    padding: 3px;
+    border-radius: 5px;
+  }
+
+  .unit-dropdown{
+    padding: 3px;
+    border-radius: 4px;
+  }
+  .add-service-btn:hover {
+    background: #0056b3; /* Darker blue on hover */
+  }
+
+  .download-btn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 6px;
+  }
+  
+  .download-btn button{
+    border: none;
+    color: cadetblue;
+    font-weight: 500;
+    background-color: transparent;
+  }
+
+  @media (max-width: 768px) {
+    .services-container {
+      padding: 10px; /* Reduced padding on smaller screens */
+    }
+  
+    .add-service-btn {
+      font-size: 12px; /* Smaller font size for the button */
+      padding: 10px 15px; /* Smaller padding for the button */
+    }
+  
+    .service-item {
+      flex-direction: column; /* Stack elements vertically in service items */
+      align-items: flex-start; /* Align items to start */
+    }
+  
+    .serviesimg {
+      margin-right: 0;
+      margin-bottom: 0px;
+      width: 20%;
+    }
+  
+    .download-btn {
+      justify-content: center; /* Center buttons */
+    }
+  }
+  

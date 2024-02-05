@@ -1,0 +1,13 @@
+.picker{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.picker svg{
+    width: 27px;
+    height: 15px;
+}

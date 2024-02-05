@@ -1,0 +1,124 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Registration Container */
+  .register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styling */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Button Styling */
+  .register-button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-button:hover {
+    background-color: #004494;
+  }
+  
+  /* Link Styling */
+  .login-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-links a {
+    text-decoration: none;
+    color: #0056b3;
+  }
+  
+  .login-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .register-container {
+      /* Increase padding for touch targets on tablets */
+      padding: 15px;
+    }
+  
+    .register-form {
+        margin: auto;
+      /* Adjust form spacing and layout on tablets */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .register-container {
+      /* Full width with a small amount of margin on smaller screens */
+      max-width: none;
+      width: 90%;
+      margin: 20px auto;
+    }
+  
+    .form-group label {
+      /* Larger font size for better readability on mobile */
+      font-size: larger;
+    }
+  
+    .form-group input,
+    .register-button {
+      /* Larger padding for better touch interaction */
+      padding: 12px;
+    }
+  
+    .register-button {
+      /* Larger font size for the button text on mobile */
+      font-size: larger;
+    }
+  
+    .login-links {
+      /* Increase spacing for links to avoid accidental taps */
+      margin-top: 25px;
+    }
+  
+    .login-links a {
+      /* Make links block elements to fill the width */
+      display: block;
+      margin-bottom: 10px; /* Add space between stacked links */
+    }
+  }
+  

@@ -1,0 +1,84 @@
+.service-form {
+    background: #ffffff;
+    width: 90%;
+    max-width: 602px;
+    margin: 0 auto;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    height: 40rem;
+    overflow-y: scroll;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .service-form h2 {
+    text-align: center;
+  }
+  
+  .price-unit-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* Adjust as needed */
+  }
+  
+  .price-unit-flex > div {
+    flex: 1;
+  }
+
+  .service-unit select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+
+  .image-preview img {
+    width: 100px; /* Adjust to the size you want */
+    height: 100px; /* Adjust to the size you want */
+    object-fit: cover;
+  }
+  
+
+  .service-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .service-form input[type="text"],
+  .service-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .service-form .toggle-switch {
+    margin-bottom: 20px;
+  }
+  
+  .service-form .sac-gst-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .service-form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .service-form button:hover {
+    background-color: #0056b3;
+  }
+  

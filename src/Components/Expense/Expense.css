@@ -1,0 +1,92 @@
+.expense-bills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Creates a responsive grid */
+    gap: 10px; /* Adjust gap between grid items */
+    padding: 20px; /* Adds some padding around the grid */
+  }
+  
+  .Expense-history {
+    padding: 40px;
+  }
+  
+  .category-item {
+    border: 1px solid cadetblue;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    margin-bottom: 20px;
+  }
+  
+  .bill-item {
+    border: 1px solid #ccc;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+  }
+  
+  .search-bars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  
+  .search-bars input,
+  .search-bars button {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .download-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .download-buttons button {
+    padding: 8px;
+    color: cadetblue;
+    border: none;
+    background-color: transparent;
+  }
+  
+  /* Responsive media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .search-bars, .download-buttons {
+      justify-content: center;
+      padding-left: 0;
+    }
+  
+    .category-item, .bill-item {
+      margin: 10px;
+    }
+  }
+  
+  /* Responsive media query for very small screens */
+  @media screen and (max-width: 480px) {
+    .search-bars, .download-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-bars input,
+    .search-bars button,
+    .download-buttons button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .category-item {
+      padding: 8px;
+      text-align: center;
+    }
+  }
+  

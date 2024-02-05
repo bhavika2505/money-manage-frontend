@@ -1,0 +1,8 @@
+.dialog input[type=number]{
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between inputs */
+    border-radius: 12px;
+    border: 1px solid #ccc; /* Solid border for better visibility */
+    outline: none; 
+}

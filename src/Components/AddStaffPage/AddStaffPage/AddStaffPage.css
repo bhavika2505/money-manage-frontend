@@ -1,0 +1,176 @@
+.add-staff-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    /* Add any global styles for your page here */
+  }
+  
+  .add-staff-header {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .staff-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem;
+  }
+  .subimg img{
+    width: 7rem;
+    height: 7rem;
+
+  }
+
+  .add-staff-header img{
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  .add-staff-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    /* Use flexbox to distribute action items */
+  }
+  
+  .action-item {
+    text-align: center;
+    /* Style for action items */
+  }
+  .add-staff-button {
+    margin-right: 2rem;
+  }
+  
+  
+  .how-it-works {
+    padding: 20px;
+    display: flex;
+    background-color: #f8f8f8;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .how-it-works p{
+    font-weight: 700;
+  }
+  .works-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    /* Styles for items in HOW IT WORKS section */
+  }
+
+  .works-item p{
+    font-weight: 300;
+    margin-left: 10px;
+  }
+
+  .works-item svg{
+    width: 32px;
+    height: 32px;
+    color: #023d40;
+    background: #8facad;
+    border-radius: 28px;
+    padding: 5px;
+  }
+  
+  .add-staff-button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-size: 1em;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* Styles for the ADD STAFF button */
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply the animation to each item with a delay */
+  .add-staff-header,
+  .action-item,
+  .works-item,
+  .add-staff-button {
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+  
+  .add-staff-header {
+    animation-delay: 0.5s; /* Delays the start of the animation */
+  }
+  
+  .action-item:nth-child(1) {
+    animation-delay: 1s; /* Adjust these delays for each item */
+  }
+  
+  .action-item:nth-child(2) {
+    animation-delay: 1.5s;
+  }
+  
+  .action-item:nth-child(3) {
+    animation-delay: 2s;
+  }
+  
+  .how-it-works h2 {
+    animation-delay: 2.5s;
+  }
+  
+  .works-item:nth-child(1) {
+    animation-delay: 3s;
+  }
+  
+  .works-item:nth-child(2) {
+    animation-delay: 3.5s;
+  }
+  
+  .add-staff-button {
+    animation-delay: 0.5s;
+  }
+
+  @media screen and (max-width: 768px) {
+    .add-staff-header img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .subimg img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .add-staff-button {
+        padding: 10px 20px;
+        font-size: 0.8em;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .add-staff-actions, .how-it-works {
+        flex-direction: column;
+    }
+}

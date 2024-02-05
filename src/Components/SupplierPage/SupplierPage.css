@@ -1,0 +1,49 @@
+.supplierData{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px dotted;
+    margin: 15px 0px;
+    box-shadow: 9px 10px rgba(0,0,0,0.1);
+    padding: 0px 20px;
+    background-color: white;
+}
+
+.supplierData h4{
+    color: #005353;
+    font-weight: 700;
+}
+
+.detail-btn{
+    padding: 6px 20px;
+    background-color: #96babc;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    font-weight: 600;
+}
+.amount-negative {
+    color: red;
+  }
+
+.amount-positive{
+    color: green;
+}
+
+@media (max-width: 480px) {
+    .supplierData {
+        padding: 10px;
+    }
+
+    .detail-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .dashboard {
+        padding: 0 10px;
+    }
+}

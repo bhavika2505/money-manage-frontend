@@ -1,0 +1,67 @@
+/* ReceivedFromSupplierDialog.css */
+.received-from-supplier-dialog-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.received-from-supplier-dialog {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.received-from-supplier-dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.received-from-supplier-dialog-header button {
+    background: none;
+    border: none;
+    color: #28a745; 
+    cursor: pointer;
+}
+
+.received-from-supplier-dialog-header h2 {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.received-from-supplier-dialog input[type="number"],
+.received-from-supplier-dialog textarea,
+.received-from-supplier-dialog input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.received-from-supplier-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.save-button {
+    background-color: #28a745; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

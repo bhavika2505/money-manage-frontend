@@ -1,0 +1,75 @@
+.product-form {
+    background: #ffffff;
+    width: 90%;
+    max-width: 602px;
+    margin: 0 auto;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    height: 40rem;
+    overflow-y: scroll;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .product-header{
+    margin: 0;
+    padding: 3px;
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .product-form label {
+    display: block; /* Make labels block so they stack vertically */
+    margin-bottom: 10px; /* Space out elements */
+  }
+  
+  .product-form input[type="text"],
+  .product-form select {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 20px; /* Space out elements */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Slightly rounded borders for the input fields */
+  }
+  
+  .product-form .checkbox-container {
+    display: flex; /* Align checkbox and label side by side */
+    align-items: center; /* Center-align vertically */
+    margin-bottom: 20px; /* Space out elements */
+  }
+  
+  .product-form input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label */
+  }
+  
+  .product-form button {
+    background: #007bff; /* Example primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Separate block for buttons */
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Space out elements */
+  }
+  
+  .product-form button:hover {
+    background: #0056b3; /* Darker shade on hover */
+  }
+
+  .sec-unit{
+    color: cadetblue;
+  }
+  
+  /* Additional styles for other elements like date picker, switch, etc. */
+  

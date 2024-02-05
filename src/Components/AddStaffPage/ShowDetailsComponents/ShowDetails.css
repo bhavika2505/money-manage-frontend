@@ -1,0 +1,46 @@
+.details-container {
+  margin: 20px;
+  height: 35rem;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 100%; /* updated for better cross-browser compatibility */
+  max-width: 50rem; /* Optional: to prevent the container from becoming too wide on large screens */
+  border-radius: 8px;
+  overflow-y: scroll; /* 'scroll' always shows scrollbar, 'auto' shows it only when needed */
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds subtle shadow for depth */
+}
+
+.details-container h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.details-container p {
+  color: black;
+  margin: 5px 0;
+  border: 1px solid darkgrey;
+  padding: 16px;
+  background: #e7e6e6;
+}
+
+.dialog2 {
+      width: 69%;
+    border-radius: 8px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.staff-details{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}

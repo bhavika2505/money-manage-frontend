@@ -1,0 +1,86 @@
+/* CustomerDialog.css */
+
+.dialog-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.dialog {
+    background: #598a8c;
+    padding: 20px;
+    border-radius: 5px;
+    width: 25rem; /* Adjust the width as necessary */
+    min-height: 25rem; /* Use min-height instead of height for flexible content size */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will space out your content */
+}
+
+.dialog input[type="text"],
+.dialog input[type="email"] {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between inputs */
+    border-radius: 12px;
+    border: 1px solid #ccc; /* Solid border for better visibility */
+    outline: none; /* Remove outline on focus */
+}
+
+.close-btn {
+    align-self: flex-end;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.dialog-actions {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;/* This spaces the buttons evenly */
+}
+
+.dialog-actions button {
+    padding: 10px 20px; /* Padding inside the buttons */
+    margin: 0 10px; /* Margin between buttons */
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background: white; /* Background color for buttons */
+    color: black; /* Text color for buttons */
+}
+
+/* Additional styles for specific buttons if needed */
+.dialog-actions .add-btn {
+    background: #007bff; /* Example color for Add button */
+    color: white;
+}
+
+.dialog-actions .cancel-btn {
+    background: #6c757d; /* Example color for Cancel button */
+    color: white;
+}
+
+@media (min-width: 480px) {
+    .dialog-actions {
+        flex-direction: row; /* Side by side buttons on larger screens */
+        justify-content: center; /* Center buttons horizontally */
+    }
+
+    .dialog-actions button {
+        width: auto; /* Auto width for buttons */
+        margin: 0 10px; /* Space between buttons */
+    }
+}

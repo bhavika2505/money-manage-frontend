@@ -1,0 +1,64 @@
+/* SupplierReport.css */
+/* SupplierReport.css */
+
+.chart-container {
+    width: 400px; /* Set a fixed width */
+    height: 400px; /* Set a fixed height */
+    position: relative; /* Positioning context for the chart */
+  }
+  
+
+/* General styles for the report container */
+.report-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  /* Financial summary styles */
+  .financial-summary {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Supplier list styles */
+  .supplier-list {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .supplier-list h2 {
+    margin-bottom: 10px;
+  }
+  
+  .supplier-item {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Ensure last item does not have a bottom border */
+  .supplier-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Chart container styles */
+  .chart-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .chart-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for each chart, this ensures they take the full width of the container */
+  .chart-container .chart {
+    width: 100%;
+    height: auto;
+  }
+  

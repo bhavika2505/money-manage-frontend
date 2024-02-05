@@ -1,0 +1,121 @@
+.previewhead{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.psection1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    align-content: flex-start;
+    align-items: center;
+    font-size: large;
+    margin-left: 4.2rem;
+    justify-content: space-between;
+}
+
+.p-logo{
+    width: 110px;
+    height: 110px;
+    margin-right: 5rem;
+}
+
+.p-Billed-by{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background: #99b1b173;
+    padding-left: 20px;
+    border: 1px dotted;
+    margin: inherit;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.psection3{
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: space-around; */
+    align-items: flex-start;
+    width: 53rem;
+    margin-left: 5rem;
+    flex-direction: column;
+}
+
+.pshipping-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.psection5{
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.pdiscount{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.ptotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ptotal p{
+    margin-left: 5px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.ptermsconditions{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+}
+
+.pterms-display{
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 2rem;
+    font-size: large;
+}
+
+.pitems{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.margin{
+    margin-bottom: 15px;
+}

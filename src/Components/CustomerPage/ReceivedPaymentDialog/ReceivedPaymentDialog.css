@@ -1,0 +1,118 @@
+/* ReceivedPaymentDialog.css */
+.received-payment-dialog-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .received-payment-dialog {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .received-payment-dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .received-payment-dialog-header button {
+    background: none;
+    border: none;
+    color: #28a745; /* Different color for 'You Got' dialog */
+    cursor: pointer;
+  }
+  
+  .received-payment-dialog-header h2 {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .received-payment-dialog input[type="number"],
+  .received-payment-dialog textarea,
+  .received-payment-dialog input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .received-payment-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .save-button {
+    background-color: #28a745; /* Different color for 'You Got' dialog */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .addBillNo {
+    border: none;
+    background: none;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    color: cadetblue;
+    font-weight: 700;
+    font-size: small;
+  }
+  
+  .addAttachment {
+    border: 1px dotted;
+    max-width: max-content;
+    padding: 8px;
+    background: gainsboro;
+    font-size: small;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .received-payment-lst-btn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+  }
+  
+  .file-name {
+    margin-top: 10px;
+    font-size: 12px;
+    margin-left: 3px;
+  }
+  
+  .filedetails {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  
+  

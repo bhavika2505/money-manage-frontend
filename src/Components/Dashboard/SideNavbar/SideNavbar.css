@@ -1,0 +1,54 @@
+.side-navbar {
+    background-color: #f9f9f9;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Other styles as needed */
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    /* Other styles as needed */
+  }
+  
+  .nav-links li a.active,
+  .nav-links li a:hover {
+    background-color: #0056b3;
+    color: white;
+    /* Other styles as needed */
+  }
+ 
+  /* Inside SideNavbar.css */
+.menu-button {
+  display: none; /* Hide by default */
+  position: fixed; /* Fixed at the top */
+  top: 4px;
+  z-index: 1010;
+  left: 10px; /* Above the side-navbar */
+}
+
+@media (max-width: 768px) {
+  .menu-button {
+    display: block; /* Show the button */
+  }
+  
+  .side-navbar {
+    width: 100%; /* Full width on small screens */
+    left: -100%; /* Hide off-screen */
+    transition: left 0.3s; /* Smooth transition for sliding in */
+    /* Other styles as needed */
+  }
+  
+  .side-navbar.active {
+    left: 0; /* Show navbar */
+  }
+}

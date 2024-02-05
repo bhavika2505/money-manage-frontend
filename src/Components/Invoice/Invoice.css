@@ -1,0 +1,796 @@
+.container {
+  display: grid;
+  grid-template-columns: 250px auto; /* Adjust the 250px to match the actual width of your sidebar */
+  grid-template-rows: auto 1fr; /* Adjust the first row size to match the actual height of your header */
+  grid-template-areas:
+      "header header"
+      "sidebar content";
+  height: 100vh;
+}
+
+.business-header {
+  grid-area: header;
+  padding: 0px;
+  text-align: center;
+}
+
+.side-navbar {
+  grid-area: sidebar;
+  width: auto;
+  height: auto;
+  /* Add your sidebar styles here */
+}
+
+
+.invoice-form {
+  max-width: 62%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px dotted;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 9px 10px rgba(0,0,0,0.1);
+  }
+
+  .business-logo {
+    position: relative;
+    font-size: 14px; /* Example size, adjust as needed */
+    /* Other styling here */
+  }
+  
+  .business-logo input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .business-logo label {
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    padding: 15px 12px;
+    margin-top: 5px;
+    text-align: center;
+    margin-right: 5rem;
+    border-radius: 6px;
+    display: flex;
+    font-size: medium;
+    color: cadetblue;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .invoice-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .invoice-form input[type="text"],
+  .invoice-form input[type="number"],
+  .invoice-form input[type="date"],
+  .invoice-form select,
+  .invoice-form textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 18rem;
+  }
+  
+  .invoice-form button {
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .invoice-form button:hover {
+    background-color: #68b7b7;
+    color: black;
+  }
+
+  .section1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    align-content: flex-start;
+    align-items: baseline;
+    margin-left: 4.2rem;
+    justify-content: space-between;
+  }
+
+  .Invoicedetails{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .section2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+
+  .Billed-by{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background: #99b1b173;
+    padding-left: 20px;
+    border: 1px dotted;
+    margin: inherit;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section3-input button{
+    background: transparent;
+    border: 1px dotted;
+    font-weight: 600;
+  }
+
+  .bill-by{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: #fff; */
+    padding: 5px;
+  }
+
+  .bill-to{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: #fff; */
+    padding: 5px;
+  }
+  .billed-to{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background: #99b1b173;
+    padding-left: 20px;
+    border: 1px dotted;
+    margin: inherit;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+
+  .section2 button{
+    color: black;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border: none;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .bill-phone{display: none;}
+
+  .bill-Email{
+    display: none;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;}
+
+  .bill-pan{display: none;}
+
+  .bill-phone2{display: none;}
+
+  .bill-Email2{
+    display: none;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;}
+
+  .bill-pan2{display: none;}
+
+  .hidebtn{
+    display: flex;
+  }
+
+  .section3{
+    margin-top: 20px;
+  }
+
+  .section3-input{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: baseline;
+    width: 53rem;
+    flex-direction: row;
+  }
+
+  .section3-input input{
+    margin: 0px 25px 0px 25px;
+  }
+
+  .section3-input button{
+    margin: 0px 25px 0px 25px;
+  }
+
+  .shipped-section {
+    display: flex;
+    width: 21.3rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px dotted;
+    align-content: space-around;
+    background: #99b1b173;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .recurring-invoice-section{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: stretch;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+
+  .recurring-item label{
+    margin-right: 15px;
+    color: cadetblue;
+  }
+
+  .draft{
+    padding: 10px;
+    border: 1px dotted cadetblue;
+    border-radius: 7px;
+    width: 70%;
+  }
+
+  .draft label{
+    color: black;
+  }
+  .draft p{
+    font-size: 10px;
+    margin-left: 1.1rem;
+    color: #185d5d;
+  }
+  .recurring-item{
+    color: black;
+    margin: 25px;
+
+  }
+  .shipping-details {
+    margin-top: 20px;
+  }
+  .terms-display{
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+    font-size: medium;
+  }
+
+  /* Additional styles for inputs inside .shipped-section, if needed */
+  .shipped-section input, .shipped-section select {
+    margin-bottom: 10px; /* Spacing between fields */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .shippedBoxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .termsconditions{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+
+  }
+
+  .termsconditions button{
+    border: 1px grey dotted;
+    background: transparent;
+    color: #598a8c;
+    font-size: small;
+    font-weight: 600;
+  }
+
+  .section6 li{
+    margin-left: 5rem;
+    color: darkcyan;
+  }
+
+  .section6 li button {
+    border: none;
+    background: transparent;
+}
+
+  .termsbtn{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .termsbtn button{
+    border: 1px grey dotted;
+    background: transparent;
+    color: darkcyan;
+    font-size: small;
+    font-weight: 600;
+    margin: 5px;
+  }
+
+  .showship{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 500;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    margin-left: 5rem;
+    align-items: center;
+    margin-right: 4rem;
+
+  }
+
+  .section4 h2{
+    background-color: #D1DCDC;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .discount-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .total{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .items input{
+    width: 32%;
+    padding: 5px;
+    margin: 2px;
+  }
+
+  .items button{
+    border: none;
+    background-color: transparent;
+    display: flex;
+  }
+
+  .item{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .add-item {
+    width: 100%;
+    background-color: transparent;
+    border: 1px grey dotted;
+    color: #000000c9;
+    font-weight: 500;
+    font-size: large;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .discription{
+    display: flex;
+    width: 24rem;
+  }
+
+  .modal-content {
+    background-color: white;
+    padding: 32px;
+    border-radius: 4px;
+    width: max-content;
+    height: fit-content;
+
+  }
+
+  .modelui button{
+    margin: 10px;
+  }
+
+  .modelui{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .section5{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8%;
+  }
+
+  .section5 h2{
+    margin-bottom: 0px;
+  }
+
+  .section5 button{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    border: none;
+    font-weight: 500;
+    color: #598a8c;
+  }
+
+  
+  .discountbtn {
+    display: none;
+  }
+  
+  .discountbtn.show {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .header{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+  }
+
+  .applyAdditionalBtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .DiscountBtn-C{
+    display: flex;
+  }
+
+  .additionalCharge input[type='number'] {
+    margin-left: 10px;
+}
+
+.lastbtn{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.lastbtn button{
+  margin: 15px;
+  background-color: #047a7a;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+}
+
+.recurring-para p{
+  font-size: small;
+  font-weight:300 ;
+}
+
+/* Original Styles */
+/* ... (include all your original styles here) ... */
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 1024px) {
+  /* Styles for tablets and smaller laptops */
+  .invoice-form {
+    margin: 2px;
+    max-width: unset;
+  }
+  
+  .invoice-form input[type="text"],
+  .invoice-form input[type="number"],
+  .invoice-form input[type="date"],
+  .invoice-form select,
+  .invoice-form textarea,
+  .business-logo label,
+  .section3-input {
+    width: 100%; /* Full width */
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .business-logo label {
+    margin-right: 0; /* Remove any additional margin */
+  }
+
+  .section1, .section2, .section3, .section4, .section5, .section6 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .item input[type="text"], .item input[type="number"] {
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Space between inputs */
+  }
+
+  .add-item {
+    width: 100%; /* Full width */
+    justify-content: center; /* Center button */
+    margin-top: 10px; /* Space above button */
+  }
+  
+  .section4, .items, .item {
+    width: 100%; /* Full width */
+    align-items: center; /* Center align */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section4 h2 {
+    align-self: flex-start;
+  }
+
+  .description input[type="text"], .description textarea {
+    width: 100%; /* Ensures the input takes the full width of its parent */
+    box-sizing: border-box; /* Padding and borders will be included in the width */
+    margin-bottom: 10px; /* Space below the description field */
+  }
+}
+
+/* You might want to ensure that this style applies to all screen sizes, not just when the width is below 1024px */
+/* So you can also add it outside of the media query if necessary */
+.discription input[type="text"], .discription textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Adjust as needed */}
+
+  .discription {
+    width: 100%; /* Full width for the description field */
+    box-sizing: border-box; /* Include padding and borders in the width */
+    margin-bottom: 10px; /* Space below the description field */
+  }
+
+  .add-more-items-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    width: 100%; /* Full width to match the description field */
+    margin-top: 10px; /* Space above the button */
+  }
+
+  .add-item-button {
+    padding: 10px 20px; /* Adequate padding for the button */
+    margin: 0; /* Remove any default margin */
+  }
+
+ 
+  .give-item-wise-discount {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    width: 100%; /* Full width to match the above elements */
+    margin-top: 10px; /* Consistent spacing */
+  }
+
+
+@media screen and (max-width: 768px) {
+  /* Styles for smaller tablets and large phones */
+  .header {
+    font-size: 24px; /* Smaller font size for headers */
+  }
+
+  .section1, .section2, .section3, .section4, .section5, .section6 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Styles for mobile phones */
+  .header {
+    font-size: 20px; /* Even smaller font size for headers */
+  }
+
+  .section3-input, .shipped-section, .recurring-invoice-section, .terms-display, .termsconditions, .section4, .section5, .section6 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shipped-section, .recurring-invoice-section {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .section3-input button, .termsconditions button {
+    font-size: 14px; /* Smaller font size for buttons */
+  }
+  
+  .add-item button {
+    padding: 10px 20px; /* Larger touch target for mobile */
+  }
+ 
+}
+
+/* Global rules for input fields to ensure they are not too wide */
+.invoice-form input,
+.invoice-form select,
+.invoice-form textarea {
+  max-width: 100%;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Global rules for adjusting font sizes on smaller screens */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px; /* Adjust base font size for mobile */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section5, .recurring-invoice-section {
+    /* Add the styles you want to apply for non-desktop screens */
+    .section5{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .termsconditions{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    .recurring-invoice-section{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+/* Ensure desktop screens do not adopt styles meant for smaller devices */
+@media screen and (min-width: 1025px) {
+  .section5, .recurring-invoice-section {
+    /* Reset or add styles specific to desktop screens */
+    .section5{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .termsconditions{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    .recurring-invoice-section{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

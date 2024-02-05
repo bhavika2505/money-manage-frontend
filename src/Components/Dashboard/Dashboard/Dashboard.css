@@ -1,0 +1,133 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 250px auto; /* Adjust the 250px to match the actual width of your sidebar */
+    grid-template-rows: auto 1fr; /* Adjust the first row size to match the actual height of your header */
+    grid-template-areas:
+        "header header"
+        "sidebar content";
+    height: 100vh;
+  }
+  
+  .business-header {
+    grid-area: header;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .side-navbar {
+    grid-area: sidebar;
+    width: auto;
+    height: auto;
+    /* Add your sidebar styles here */
+  }
+  
+  .dashboard-main {
+    display: flex;
+    flex-direction: row; /* Row by default */
+    height: calc(100% - 60px); /* Adjust the height based on your header's height */
+  }
+  
+  .dashboard-content {
+    flex-grow: 1;
+    padding: 20px;
+    /* Additional styles for your content area */
+  }
+
+  .date-dash{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: baseline;
+
+  }
+
+  .dash-drop{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+  }
+
+  .custom-dropdown-item {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    margin: 5px 0;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 9px;
+    margin-top: 11px;
+
+}
+.ables{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.dropp{
+  background-color: #ddd;
+  margin-top: 29px;
+}
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; /* Full width for smaller screens */
+      grid-template-rows: auto 1fr;
+      grid-template-areas:
+        "header"
+        "content";
+    }
+    
+    .side-navbar {
+      position: fixed;
+      left: -100%; /* Start off-screen */
+      width: 100%; /* Full width when active */
+      transition: left 0.3s; /* Smooth transition for sliding in */
+    }
+    
+    .side-navbar.active {
+      left: 0; /* Bring into view when active */
+    }
+    
+    .dashboard-content {
+      width: 100%; /* Full width */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  /* More specific media queries for smaller devices */
+  @media (max-width: 576px) {
+    .dashboard-header, .dashboard-content, .side-navbar {
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      flex-wrap: wrap;/* Even smaller padding for very small devices */
+    }
+  
+    .dateselector{
+      z-index: -1;
+    }
+    .dashboard-header .search-bar, .dashboard-header .user-info {
+      display: none; /* Optionally hide less important elements on very small screens */
+    }
+  
+    /* You might want to turn the navbar into a hamburger menu on very small screens */
+    /* Implement a toggle function in your React component for this */
+  }
+  

@@ -1,0 +1,88 @@
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Other styles as needed */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    /* Other styles as needed */
+  }
+  
+  .search-bar input[type="search"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    /* Other styles as needed */
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    /* Other styles as needed */
+  }
+  
+  .profile-image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    /* Other styles as needed */
+  }
+  
+  .username {
+    margin-left: 10px;
+    /* Other styles as needed */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .dashboard-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search-bar {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .user-info {
+      width: 100%;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+  
+    .logo,
+    .username {
+      font-size: 20px; /* Slightly smaller font size on tablet */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .dashboard-header {
+      padding: 10px; /* Smaller padding on mobile */
+    }
+  
+    .logo {
+      font-size: 18px; /* Even smaller font size on mobile */
+    }
+  
+    .search-bar input[type="search"] {
+      padding: 6px; /* Smaller padding on mobile */
+    }
+  
+    .profile-image {
+      width: 30px; /* Smaller profile image on mobile */
+      height: 30px;
+    }
+  
+    .username {
+      display: none; /* Hide username on very small screens */
+    }
+  }
+  
